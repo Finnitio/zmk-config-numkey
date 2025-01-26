@@ -1,0 +1,4 @@
+# configuration for https://github.com/caksoylar/keymap-drawer
+parse_config:
+  zmk_additional_includes: ["zmk-helpers/include"]
+  keymap dump-config >my_config.yaml
