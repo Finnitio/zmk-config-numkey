@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - ü
+  - Ü
   - ↹
   - '&hml LGUI (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_A))'
   - '&hml LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_S))'
@@ -23,7 +23,7 @@ layers:
   - '&hmr LSHFT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_K))'
   - '&hmr LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_L))'
   - '&hmr LGUI (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SEMICOLON_AND_COLON))'
-  - ä
+  - Ä
   - ''
   - Y
   - X
@@ -51,7 +51,7 @@ layers:
   - K
   - U
   - O
-  - ä
+  - Ä
   - P
   - B
   - L
@@ -73,9 +73,9 @@ layers:
   - '-'
   - Y
   - {t: ':', h: .}
-  - ü
+  - Ü
   - {t: ;, h: ','}
-  - ö
+  - Ö
   - G
   - C
   - V
