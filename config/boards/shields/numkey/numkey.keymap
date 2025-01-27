@@ -20,6 +20,7 @@
 #define NAVNUM 3
 #define FKEYBT 4
 
+/*Trigger Draw*/
 
 /* custom behaviors */
 
