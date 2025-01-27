@@ -32,12 +32,12 @@ layers:
   - b
   - n
   - m
-  - {t: ',', s: '((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))))'}
-  - {t: '((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))', s: ':'}
+  - ','
+  - .
   - {t: '((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))))', s: '((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 1 AND EXCLAMATION))))'}
   - '-'
   - '&copy_cut'
-  - Ctl+v
+  - paste
   - ''
   - ⌦
   - {t: Shift, h: Shift}
@@ -72,9 +72,9 @@ layers:
   - q
   - '-'
   - y
-  - {t: '((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))', s: ':'}
+  - .
   - ü
-  - {t: ',', s: '((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))))'}
+  - ','
   - ö
   - g
   - c
@@ -83,7 +83,7 @@ layers:
   - f
   - {t: '((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))))', s: '((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 1 AND EXCLAMATION))))'}
   - '&copy_cut'
-  - Ctl+v
+  - paste
   - ''
   - ⌦
   - {t: Shift, h: Shift}
@@ -231,23 +231,23 @@ layers:
   - ''
 combos:
 - p: [26, 25]
-  k: Ctl+x
+  k: cut
   l: [default_layer, sym_layer, navnum_layer, cmos_layer]
 - p: [27, 26]
-  k: Ctl+c
+  k: copy
   l: [default_layer, sym_layer, navnum_layer, cmos_layer]
 - p: [28, 27]
-  k: Ctl+v
+  k: paste
   l: [default_layer, sym_layer, navnum_layer, cmos_layer]
 - p: [29, 28]
-  k: '&winpaste'
+  k: clipboard
   l: [default_layer, sym_layer, navnum_layer, cmos_layer]
 - p: [3, 2]
-  k: '&winright'
+  k: Desk right
   l: [default_layer, sym_layer, navnum_layer, cmos_layer]
 - p: [4, 3]
-  k: '&winleft'
+  k: Desk left
   l: [default_layer, sym_layer, navnum_layer, cmos_layer]
 - p: [10, 11]
-  k: {t: fkeysbt_layer, h: toggle}
+  k: F-Keys BT
   l: [default_layer, sym_layer, navnum_layer, cmos_layer]
