@@ -1,6 +1,6 @@
 layers:
   default_layer:
-  - ESC
+  - Esc
   - q
   - w
   - e
@@ -12,7 +12,7 @@ layers:
   - o
   - p
   - ü
-  - TAB
+  - ↹
   - '&hml LGUI (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_A))'
   - '&hml LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_S))'
   - '&hml LSHFT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_D))'
@@ -39,14 +39,14 @@ layers:
   - '&copy_cut'
   - Ctl+v
   - ''
-  - DEL
-  - {t: LSHFT, h: LSHFT}
-  - RET
+  - ⌦
+  - {t: Shift, h: Shift}
+  - ⏎
   - {t: sym_layer, h: navnum_layer}
-  - SPACE
-  - {t: BSPC, s: DEL}
+  - ␣
+  - {t: ⌫, s: ⌦}
   cmos_layer:
-  - ESC
+  - Esc
   - j
   - k
   - u
@@ -58,7 +58,7 @@ layers:
   - m
   - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
   - x
-  - TAB
+  - ↹
   - '&hml LGUI (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_W))'
   - '&hml LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_H))'
   - '&hml LSHFT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_I))'
@@ -85,12 +85,12 @@ layers:
   - '&copy_cut'
   - Ctl+v
   - ''
-  - DEL
-  - {t: LSHFT, h: LSHFT}
-  - RET
+  - ⌦
+  - {t: Shift, h: Shift}
+  - ⏎
   - {t: sym_layer, h: navnum_layer}
-  - SPACE
-  - {t: BSPC, s: DEL}
+  - ␣
+  - {t: ⌫, s: ⌦}
   sym_layer:
   - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE))))
   - ^
@@ -138,11 +138,11 @@ layers:
   - ''
   - ''
   navnum_layer:
-  - ESC
+  - Esc
   - ''
-  - PG UP
-  - UP
-  - PG DN
+  - Page Up
+  - ↑
+  - Page Down
   - ''
   - +
   - '7'
@@ -150,12 +150,12 @@ layers:
   - '9'
   - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE))))
   - ''
-  - TAB
-  - HOME
-  - LEFT
-  - DOWN
-  - RIGHT
-  - END
+  - ↹
+  - Home
+  - ←
+  - ↓
+  - →
+  - End
   - '-'
   - '&hmr LALT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_4_AND_DOLLAR))'
   - '&hmr LSHFT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_5_AND_PERCENT))'
@@ -177,9 +177,9 @@ layers:
   - '0'
   - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
   - ','
-  - DEL
+  - ⌦
   - ''
-  - RET
+  - ⏎
   - {type: held}
   - ''
   - ''
@@ -241,12 +241,6 @@ combos:
   l: [default_layer, sym_layer, navnum_layer, cmos_layer]
 - p: [29, 28]
   k: '&winpaste'
-  l: [default_layer, sym_layer, navnum_layer, cmos_layer]
-- p: [7, 8]
-  k: '&winctrlleft'
-  l: [default_layer, sym_layer, navnum_layer, cmos_layer]
-- p: [8, 9]
-  k: '&winctrlright'
   l: [default_layer, sym_layer, navnum_layer, cmos_layer]
 - p: [3, 2]
   k: '&winright'
