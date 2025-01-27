@@ -356,7 +356,7 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">DEL</text>
 </g>
-<g transform="translate(368, 233) rotate(15.0)" class="key keypos-40">
+<g transform="translate(368, 227) rotate(15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">LSHFT</text>
 <text x="0" y="24" class="key hold">LSHFT</text>
@@ -365,14 +365,14 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">RET</text>
 </g>
-<g transform="translate(573, 245) rotate(-30.0)" class="key keypos-42">
+<g transform="translate(571, 240) rotate(-30.0)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#sym_layer">
 <text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 78%">sym_layer</tspan></text>
 </a><a href="#navnum_layer">
 <text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">navnum_lay…</tspan></text>
 </a></g>
-<g transform="translate(640, 233) rotate(-15.0)" class="key keypos-43">
+<g transform="translate(640, 227) rotate(-15.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
 </g>
@@ -662,7 +662,7 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">DEL</text>
 </g>
-<g transform="translate(368, 233) rotate(15.0)" class="key keypos-40">
+<g transform="translate(368, 227) rotate(15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">LSHFT</text>
 <text x="0" y="24" class="key hold">LSHFT</text>
@@ -671,14 +671,14 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">RET</text>
 </g>
-<g transform="translate(573, 245) rotate(-30.0)" class="key keypos-42">
+<g transform="translate(571, 240) rotate(-30.0)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#sym_layer">
 <text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 78%">sym_layer</tspan></text>
 </a><a href="#navnum_layer">
 <text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">navnum_lay…</tspan></text>
 </a></g>
-<g transform="translate(640, 233) rotate(-15.0)" class="key keypos-43">
+<g transform="translate(640, 227) rotate(-15.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
 </g>
@@ -937,16 +937,16 @@ path.combo {
 <g transform="translate(308, 210)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(368, 233) rotate(15.0)" class="key keypos-40">
+<g transform="translate(368, 227) rotate(15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(435, 245) rotate(30.0)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(573, 245) rotate(-30.0)" class="key held keypos-42">
+<g transform="translate(571, 240) rotate(-30.0)" class="key held keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
-<g transform="translate(640, 233) rotate(-15.0)" class="key keypos-43">
+<g transform="translate(640, 227) rotate(-15.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(700, 210)" class="key keypos-44">
@@ -1187,17 +1187,17 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">DEL</text>
 </g>
-<g transform="translate(368, 233) rotate(15.0)" class="key keypos-40">
+<g transform="translate(368, 227) rotate(15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(435, 245) rotate(30.0)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">RET</text>
 </g>
-<g transform="translate(573, 245) rotate(-30.0)" class="key held keypos-42">
+<g transform="translate(571, 240) rotate(-30.0)" class="key held keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
-<g transform="translate(640, 233) rotate(-15.0)" class="key keypos-43">
+<g transform="translate(640, 227) rotate(-15.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(700, 210)" class="key keypos-44">
@@ -1403,19 +1403,19 @@ path.combo {
 <g transform="translate(308, 210)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(368, 233) rotate(15.0)" class="key keypos-40">
+<g transform="translate(368, 227) rotate(15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(435, 245) rotate(30.0)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(573, 245) rotate(-30.0)" class="key keypos-42">
+<g transform="translate(571, 240) rotate(-30.0)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#default_layer">
 <text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 64%">default_la…</tspan></text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
-<g transform="translate(640, 233) rotate(-15.0)" class="key keypos-43">
+<g transform="translate(640, 227) rotate(-15.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#cmos_layer">
 <text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 70%">cmos_layer</tspan></text>
