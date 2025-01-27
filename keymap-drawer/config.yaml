@@ -10,9 +10,9 @@ parse_config:
     '&kp LC(DE_V)': 'paste'
     '&winpaste': 'clipboard'
     '&to FKEYBT': 'F-Keys BT'
-    '&comma_morph': ','
-    '&dot_morph': '.'
-
+    '&comma_morph': {h: ',', t: ';'}
+    '&dot_morph': {h: '.', t: ':'}
+    '&qexcl': {h: '?', t: '!'}
 
   zmk_keycode_map:
 
