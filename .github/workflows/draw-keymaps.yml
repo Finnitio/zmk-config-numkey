@@ -7,7 +7,7 @@ on:
       - "config/boards/shields/numkey/numkey.keymap"
       - "config/boards/shields/numkey/*.dtsi"
       - "keymap-drawer/config.yaml"
-      - "keymap-drawer/layouts/*.json
+      - "keymap-drawer/layouts/*.json"
 
 jobs:
   draw:
