@@ -1,37 +1,37 @@
 layers:
   default_layer:
   - Esc
-  - q
-  - w
-  - e
-  - r
-  - t
-  - z
-  - u
-  - i
-  - o
-  - p
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Z
+  - U
+  - I
+  - O
+  - P
   - ü
   - ↹
   - '&hml LGUI (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_A))'
   - '&hml LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_S))'
   - '&hml LSHFT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_D))'
   - '&hml LALT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_F))'
-  - g
-  - h
+  - G
+  - H
   - '&hmr LALT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_J))'
   - '&hmr LSHFT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_K))'
   - '&hmr LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_L))'
   - '&hmr LGUI (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SEMICOLON_AND_COLON))'
   - ä
   - ''
-  - y
-  - x
-  - c
-  - v
-  - b
-  - n
-  - m
+  - Y
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
   - ','
   - .
   - {t: '((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))))', s: '((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 1 AND EXCLAMATION))))'}
@@ -47,40 +47,40 @@ layers:
   - {t: ⌫, s: ⌦}
   cmos_layer:
   - Esc
-  - j
-  - k
-  - u
-  - o
+  - J
+  - K
+  - U
+  - O
   - ä
-  - p
-  - b
-  - l
-  - m
+  - P
+  - B
+  - L
+  - M
   - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
-  - x
+  - X
   - ↹
   - '&hml LGUI (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_W))'
   - '&hml LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_H))'
   - '&hml LSHFT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_I))'
   - '&hml LALT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_E))'
-  - a
-  - d
+  - A
+  - D
   - '&hmr LALT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_T))'
   - '&hmr LSHFT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_N))'
   - '&hmr LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_R))'
   - '&hmr LGUI (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_S))'
-  - q
+  - Q
   - '-'
-  - y
+  - Y
   - .
   - ü
   - ','
   - ö
-  - g
-  - c
-  - v
-  - z
-  - f
+  - G
+  - C
+  - V
+  - Z
+  - F
   - {t: '((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))))', s: '((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 1 AND EXCLAMATION))))'}
   - '&copy_cut'
   - paste
