@@ -2,5 +2,5 @@
 parse_config:
   zmk_additional_includes: ["zmk-helpers/include"]
 
-zmk_keycode_map:
-  (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Q)): Q
+  raw_binding_map:
+  '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Q))': Q
