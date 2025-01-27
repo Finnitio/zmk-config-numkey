@@ -9,6 +9,10 @@ parse_config:
     '&kp LC(DE_C)': 'copy'
     '&kp LC(DE_V)': 'paste'
     '&winpaste': 'clipboard'
+    '&to FKEYBT': 'F-Keys BT'
+    '&comma_morph': ','
+    '&dot_morph': '.'
+    
 
   zmk_keycode_map:
 
