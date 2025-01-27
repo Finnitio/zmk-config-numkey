@@ -2,7 +2,7 @@
 parse_config:
   zmk_additional_includes: ["zmk-helpers/include"]
 
-  raq_binding_map:
+  raw_binding_map:
     '&winright': 'Desk right'
     '&winleft': 'Desk left'
     '&kp LC(DE_X)': 'cut'
@@ -12,7 +12,7 @@ parse_config:
     '&to FKEYBT': 'F-Keys BT'
     '&comma_morph': ','
     '&dot_morph': '.'
-    
+
 
   zmk_keycode_map:
 
