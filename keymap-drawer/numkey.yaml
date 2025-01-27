@@ -32,9 +32,9 @@ layers:
   - B
   - N
   - M
-  - ','
-  - .
-  - {t: '((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))))', s: '((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 1 AND EXCLAMATION))))'}
+  - {t: ;, h: ','}
+  - {t: ':', h: .}
+  - {t: '!', h: '?'}
   - '-'
   - '&copy_cut'
   - paste
@@ -72,16 +72,16 @@ layers:
   - Q
   - '-'
   - Y
-  - .
+  - {t: ':', h: .}
   - ü
-  - ','
+  - {t: ;, h: ','}
   - ö
   - G
   - C
   - V
   - Z
   - F
-  - {t: '((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))))', s: '((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 1 AND EXCLAMATION))))'}
+  - {t: '!', h: '?'}
   - '&copy_cut'
   - paste
   - ''
