@@ -2,7 +2,52 @@
 parse_config:
   zmk_additional_includes: ["zmk-helpers/include"]
 
+  raq_binding_map:
+    '&winright': 'Desk right'
+    '&winleft': 'Desk left'
+    '&kp LC(DE_X)': 'cut'
+    '&kp LC(DE_C)': 'copy'
+    '&kp LC(DE_V)': 'paste'
+    '&winpaste': 'clipboard'
+
   zmk_keycode_map:
+
+    # custom mappings
+    C_VOL_UP: Vol Up
+    C_VOL_DN: Vol Down
+    C_AL_CALC: Calc
+    C_PP: Play Pause
+
+    LCTRL: Ctrl
+    RCTRL: Ctrl
+    LALT: Alt
+    RALT: Alt
+    LGUI: Win
+    RGUI: WIN
+    LSHFT: Shift
+    RSHFT: Shift
+    ESC: Esc
+    SPACE: ␣
+    BSPC: ⌫
+    RET: ⏎
+    TAB: ↹
+    DEL: ⌦
+
+    PG_UP: Page Up
+    PG_DN: Page Down
+    INS: Insert
+    HOME: Home
+    END: End
+    CAPS: Caps Lock
+    PSCRN: Print Scrn
+    PAUSE_BREAK: Pause Break
+
+    UP: ↑
+    DOWN: ↓
+    LEFT: ←
+    RIGHT: →
+
+    #german Locale
     (LC(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_LEFT_BRACKET_AND_LEFT_BRACE))): ESC
     (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_1_AND_EXCLAMATION))): '!'
     (DE_EXCLAMATION): '!'
