@@ -4,8 +4,8 @@ parse_config:
   zmk_remove_keycode_prefix: ["DE_"]
 
   raw_binding_map:
-    '&winright': 'Desk right'
-    '&winleft': 'Desk left'
+    '&winright': 'Zone right'
+    '&winleft': 'Zone left'
     '&kp LC(DE_X)': 'cut'
     '&kp LC(DE_C)': 'copy'
     '&kp LC(DE_V)': 'paste'
@@ -122,6 +122,6 @@ parse_config:
     SZ: 'ß'
     DEG: '°'
     ACUTE: '´'
-    AE: 'ä'
-    OE: 'ö'
-    UE: 'ü'
+    AE: 'Ä'
+    OE: 'Ö'
+    UE: 'Ü'
