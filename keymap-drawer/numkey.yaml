@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - ü
+  - Ü
   - ↹
   - {t: A, h: Win}
   - {t: S, h: Ctrl}
@@ -22,8 +22,8 @@ layers:
   - {t: J, h: Alt}
   - {t: K, h: Shift}
   - {t: L, h: Ctrl}
-  - {t: ö, h: Win}
-  - ä
+  - {t: Ö, h: Win}
+  - Ä
   - ''
   - Y
   - X
@@ -51,7 +51,7 @@ layers:
   - K
   - U
   - O
-  - ä
+  - Ä
   - P
   - B
   - L
@@ -73,9 +73,9 @@ layers:
   - '-'
   - Y
   - {t: ., h: ':'}
-  - ü
+  - Ü
   - {t: ',', h: ;}
-  - ö
+  - Ö
   - G
   - C
   - V
@@ -199,10 +199,10 @@ combos:
   k: clipboard
   l: [default_layer, cmos_layer]
 - p: [3, 2]
-  k: Desk right
+  k: Zone right
   l: [default_layer, sym_layer, cmos_layer]
 - p: [4, 3]
-  k: Desk left
+  k: Zone left
   l: [default_layer, sym_layer, cmos_layer]
 - p: [10, 11]
   k: F-Keys BT
