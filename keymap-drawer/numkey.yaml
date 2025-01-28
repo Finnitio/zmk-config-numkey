@@ -11,19 +11,19 @@ layers:
   - I
   - O
   - P
-  - Ü
+  - UE
   - ↹
-  - '&hml LGUI (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_A))'
-  - '&hml LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_S))'
-  - '&hml LSHFT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_D))'
-  - '&hml LALT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_F))'
+  - {t: A, h: Win}
+  - {t: S, h: Ctrl}
+  - {t: D, h: Shift}
+  - {t: F, h: Alt}
   - G
   - H
-  - '&hmr LALT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_J))'
-  - '&hmr LSHFT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_K))'
-  - '&hmr LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_L))'
-  - '&hmr LGUI (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SEMICOLON_AND_COLON))'
-  - Ä
+  - {t: J, h: Alt}
+  - {t: K, h: Shift}
+  - {t: L, h: Ctrl}
+  - {t: OE, h: Win}
+  - AE
   - ''
   - Y
   - X
@@ -35,7 +35,7 @@ layers:
   - {t: ;, h: ','}
   - {t: ':', h: .}
   - {t: '!', h: '?'}
-  - '-'
+  - MINUS
   - '&copy_cut'
   - paste
   - ''
@@ -51,31 +51,31 @@ layers:
   - K
   - U
   - O
-  - Ä
+  - AE
   - P
   - B
   - L
   - M
-  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
+  - SZ
   - X
   - ↹
-  - '&hml LGUI (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_W))'
-  - '&hml LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_H))'
-  - '&hml LSHFT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_I))'
-  - '&hml LALT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_E))'
+  - {t: W, h: Win}
+  - {t: H, h: Ctrl}
+  - {t: I, h: Shift}
+  - {t: E, h: Alt}
   - A
   - D
-  - '&hmr LALT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_T))'
-  - '&hmr LSHFT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_N))'
-  - '&hmr LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_R))'
-  - '&hmr LGUI (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_S))'
+  - {t: T, h: Alt}
+  - {t: N, h: Shift}
+  - {t: R, h: Ctrl}
+  - {t: S, h: Win}
   - Q
-  - '-'
+  - MINUS
   - Y
   - {t: ':', h: .}
-  - Ü
+  - UE
   - {t: ;, h: ','}
-  - Ö
+  - OE
   - G
   - C
   - V
@@ -92,37 +92,37 @@ layers:
   - ␣
   - {t: ⌫, s: ⌦}
   sym_layer:
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE))))
-  - ^
-  - '%'
-  - €
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 6 AND CARET))))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD GRAVE ACCENT AND TILDE))))
-  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS))))
-  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS))))
-  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS))))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 2 AND AT))))
-  - '`'
-  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE)))
-  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Q))))
-  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
-  - $
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE))))
-  - '%'
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND))))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK))))
-  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND))))
-  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK))))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD BACKSLASH AND PIPE))))
-  - ´
+  - GT
+  - CARET
+  - PERCENT
+  - EURO
+  - AMPS
+  - DEG
+  - BSLH
+  - RPAR
+  - RBRC
+  - RBKT
+  - DQT
+  - GRAVE
+  - LT
+  - AT
+  - SZ
+  - DOLLAR
+  - STAR
+  - PERCENT
+  - FSLH
+  - LPAR
+  - LBRC
+  - LBKT
+  - SQT
+  - ACUTE
   - ''
   - ''
   - ''
   - ''
-  - '|'
-  - '#'
-  - '~'
+  - PIPE
+  - HASH
+  - TILDE
   - ''
   - ''
   - ''
@@ -144,11 +144,11 @@ layers:
   - ↑
   - Page Down
   - ''
-  - +
+  - PLUS
   - '7'
   - '8'
   - '9'
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE))))
+  - STAR
   - ''
   - ↹
   - Home
@@ -156,11 +156,11 @@ layers:
   - ↓
   - →
   - End
-  - '-'
-  - '&hmr LALT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_4_AND_DOLLAR))'
-  - '&hmr LSHFT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_5_AND_PERCENT))'
-  - '&hmr LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_6_AND_CARET))'
-  - '&hmr LGUI ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_7_AND_AMPERSAND))))'
+  - MINUS
+  - {t: '4', h: Alt}
+  - {t: '5', h: Shift}
+  - {t: '6', h: Ctrl}
+  - {t: FSLH, h: Win}
   - ''
   - ''
   - ''
@@ -168,15 +168,15 @@ layers:
   - ''
   - ''
   - ''
-  - '='
+  - EQUAL
   - '1'
   - '2'
   - '3'
   - ''
   - ''
   - '0'
-  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
-  - ','
+  - DOT
+  - COMMA
   - ⌦
   - ''
   - ⏎
