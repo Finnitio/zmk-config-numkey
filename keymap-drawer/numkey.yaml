@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - UE
+  - ü
   - ↹
   - {t: A, h: Win}
   - {t: S, h: Ctrl}
@@ -22,8 +22,8 @@ layers:
   - {t: J, h: Alt}
   - {t: K, h: Shift}
   - {t: L, h: Ctrl}
-  - {t: OE, h: Win}
-  - AE
+  - {t: ö, h: Win}
+  - ä
   - ''
   - Y
   - X
@@ -32,9 +32,9 @@ layers:
   - B
   - N
   - M
-  - {t: ;, h: ','}
-  - {t: ':', h: .}
-  - {t: '!', h: '?'}
+  - {t: ',', h: ;}
+  - {t: ., h: ':'}
+  - {t: '?', h: '!'}
   - '-'
   - '&copy_cut'
   - paste
@@ -42,7 +42,7 @@ layers:
   - ⌦
   - {t: Shift, h: Shift}
   - ⏎
-  - {t: sym_layer, h: navnum_layer}
+  - {t: Sym, h: Nav Num}
   - ␣
   - {t: ⌫, s: ⌦}
   cmos_layer:
@@ -51,12 +51,12 @@ layers:
   - K
   - U
   - O
-  - AE
+  - ä
   - P
   - B
   - L
   - M
-  - SZ
+  - ß
   - X
   - ↹
   - {t: W, h: Win}
@@ -72,71 +72,27 @@ layers:
   - Q
   - '-'
   - Y
-  - {t: ':', h: .}
-  - UE
-  - {t: ;, h: ','}
-  - OE
+  - {t: ., h: ':'}
+  - ü
+  - {t: ',', h: ;}
+  - ö
   - G
   - C
   - V
   - Z
   - F
-  - {t: '!', h: '?'}
+  - {t: '?', h: '!'}
   - '&copy_cut'
   - paste
   - ''
   - ⌦
   - {t: Shift, h: Shift}
   - ⏎
-  - {t: sym_layer, h: navnum_layer}
+  - {t: Sym, h: Nav Num}
   - ␣
   - {t: ⌫, s: ⌦}
-  sym_layer:
-  - '>'
-  - ^
-  - '%'
-  - EURO
-  - '&'
-  - DEG
-  - \
-  - )
-  - '}'
-  - ']'
-  - '"'
-  - '`'
-  - <
-  - '@'
-  - SZ
-  - $
-  - '*'
-  - '%'
-  - /
-  - (
-  - '{'
-  - '['
-  - ''''
-  - ACUTE
-  - ''
-  - ''
-  - ''
-  - ''
-  - '|'
-  - '#'
-  - '~'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
+  sym_layer: ['>', ^, '%', EURO, '&', °, \, ), '}', ']', '"', '`', <, '@', ß, $, '*', '%', /, (, '{', '[', '''', ´, '', '', '', '', '|', '#', '~', '', '', '', '',
+    '', '', '', '', '', '', '', '', '', '']
   navnum_layer:
   - Esc
   - ''
@@ -180,7 +136,7 @@ layers:
   - ⌦
   - ''
   - ⏎
-  - {type: held}
+  - ''
   - ''
   - ''
   fkeysbt_layer:
@@ -232,22 +188,22 @@ layers:
 combos:
 - p: [26, 25]
   k: cut
-  l: [default_layer, sym_layer, navnum_layer, cmos_layer]
+  l: [default_layer, cmos_layer]
 - p: [27, 26]
   k: copy
-  l: [default_layer, sym_layer, navnum_layer, cmos_layer]
+  l: [default_layer, cmos_layer]
 - p: [28, 27]
   k: paste
-  l: [default_layer, sym_layer, navnum_layer, cmos_layer]
+  l: [default_layer, cmos_layer]
 - p: [29, 28]
   k: clipboard
-  l: [default_layer, sym_layer, navnum_layer, cmos_layer]
+  l: [default_layer, cmos_layer]
 - p: [3, 2]
   k: Desk right
-  l: [default_layer, sym_layer, navnum_layer, cmos_layer]
+  l: [default_layer, sym_layer, cmos_layer]
 - p: [4, 3]
   k: Desk left
-  l: [default_layer, sym_layer, navnum_layer, cmos_layer]
+  l: [default_layer, sym_layer, cmos_layer]
 - p: [10, 11]
   k: F-Keys BT
-  l: [default_layer, sym_layer, navnum_layer, cmos_layer]
+  l: [default_layer, cmos_layer]
