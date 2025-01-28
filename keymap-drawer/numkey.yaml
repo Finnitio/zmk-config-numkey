@@ -35,7 +35,7 @@ layers:
   - {t: ;, h: ','}
   - {t: ':', h: .}
   - {t: '!', h: '?'}
-  - MINUS
+  - '-'
   - '&copy_cut'
   - paste
   - ''
@@ -70,7 +70,7 @@ layers:
   - {t: R, h: Ctrl}
   - {t: S, h: Win}
   - Q
-  - MINUS
+  - '-'
   - Y
   - {t: ':', h: .}
   - UE
@@ -92,37 +92,37 @@ layers:
   - ␣
   - {t: ⌫, s: ⌦}
   sym_layer:
-  - GT
-  - CARET
-  - PERCENT
+  - '>'
+  - ^
+  - '%'
   - EURO
-  - AMPS
+  - '&'
   - DEG
-  - BSLH
-  - RPAR
-  - RBRC
-  - RBKT
-  - DQT
-  - GRAVE
-  - LT
-  - AT
+  - \
+  - )
+  - '}'
+  - ']'
+  - '"'
+  - '`'
+  - <
+  - '@'
   - SZ
-  - DOLLAR
-  - STAR
-  - PERCENT
-  - FSLH
-  - LPAR
-  - LBRC
-  - LBKT
-  - SQT
+  - $
+  - '*'
+  - '%'
+  - /
+  - (
+  - '{'
+  - '['
+  - ''''
   - ACUTE
   - ''
   - ''
   - ''
   - ''
-  - PIPE
-  - HASH
-  - TILDE
+  - '|'
+  - '#'
+  - '~'
   - ''
   - ''
   - ''
@@ -144,11 +144,11 @@ layers:
   - ↑
   - Page Down
   - ''
-  - PLUS
+  - +
   - '7'
   - '8'
   - '9'
-  - STAR
+  - '*'
   - ''
   - ↹
   - Home
@@ -156,11 +156,11 @@ layers:
   - ↓
   - →
   - End
-  - MINUS
+  - '-'
   - {t: '4', h: Alt}
   - {t: '5', h: Shift}
   - {t: '6', h: Ctrl}
-  - {t: FSLH, h: Win}
+  - {t: /, h: Win}
   - ''
   - ''
   - ''
@@ -168,15 +168,15 @@ layers:
   - ''
   - ''
   - ''
-  - EQUAL
+  - '='
   - '1'
   - '2'
   - '3'
   - ''
   - ''
   - '0'
-  - DOT
-  - COMMA
+  - .
+  - ','
   - ⌦
   - ''
   - ⏎
