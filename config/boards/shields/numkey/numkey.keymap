@@ -140,15 +140,15 @@ ZMK_BEHAVIOR(winpaste, macro,
 //#undef COMBO_TERM
 //#define COMBO_TERM 75  // timeout of 75ms (default is 30ms if omitted)
 
-ZMK_COMBO(combo_cut,         &kp LC(DE_X),  LB3 LB4, DEF SYM NAVNUM CMOS)  // Ctrl + X, active on all layers
-ZMK_COMBO(combo_copy,         &kp LC(DE_C),  LB2 LB3, DEF SYM NAVNUM CMOS)  // Ctrl + C, active on all layers
-ZMK_COMBO(combo_paste,        &kp LC(DE_V),  LB1 LB2, DEF SYM NAVNUM CMOS)  // Ctrl + V, active on all layers
-ZMK_COMBO(combo_winpaste,     &winpaste,  LB0 LB1, DEF SYM NAVNUM CMOS)  // Win + V, active on all layers
+ZMK_COMBO(combo_cut,         &kp LC(DE_X),  LB3 LB4, DEF CMOS)  // Ctrl + X, active on all layers
+ZMK_COMBO(combo_copy,         &kp LC(DE_C),  LB2 LB3, DEF CMOS)  // Ctrl + C, active on all layers
+ZMK_COMBO(combo_paste,        &kp LC(DE_V),  LB1 LB2, DEF CMOS)  // Ctrl + V, active on all layers
+ZMK_COMBO(combo_winpaste,     &winpaste,  LB0 LB1, DEF CMOS)  // Win + V, active on all layers
 //ZMK_COMBO(combo_winctrlleft,  &winctrlleft,  RT1 RT2, DEF SYM NAVNUM CMOS)  // Win + CTRL + Left, active on all layers
 //ZMK_COMBO(combo_winctrlright, &winctrlright, RT2 RT3, DEF SYM NAVNUM CMOS)  // Win + CTRL + Right, active on all layers
-ZMK_COMBO(combo_winright,     &winright,  LT2 LT3, DEF SYM NAVNUM CMOS)  // Win + Right, active on all layers
-ZMK_COMBO(combo_winleft,      &winleft,  LT1 LT2, DEF SYM NAVNUM CMOS)  // Win + Left, active on all layers
-ZMK_COMBO(combo_LT3,          &to FKEYBT,    RT4 RT5, DEF SYM NAVNUM CMOS)  //Always go to Layer FKEYS&BT
+ZMK_COMBO(combo_winright,     &winright,  LT2 LT3, DEF SYM CMOS)  // Win + Right, active on all layers
+ZMK_COMBO(combo_winleft,      &winleft,  LT1 LT2, DEF SYM CMOS)  // Win + Left, active on all layers
+ZMK_COMBO(combo_LT3,          &to FKEYBT,    RT4 RT5, DEF CMOS)  //Always go to Layer FKEYS&BT
 
 /* keymap */
 

@@ -11,9 +11,11 @@ parse_config:
     '&kp LC(DE_V)': 'paste'
     '&winpaste': 'clipboard'
     '&to FKEYBT': 'F-Keys BT'
-    '&comma_morph': {h: ',', t: ';'}
-    '&dot_morph': {h: '.', t: ':'}
-    '&qexcl': {h: '?', t: '!'}
+    '&comma_morph': {h: ';', t: ','}
+    '&dot_morph': {h: ':', t: '.'}
+    '&qexcl': {h: '!', t: '?'}
+    'copycut': {h: 'copy', t: 'cut'}
+    '&lht NAVNUM SYM': {h: 'Nav Num', t: 'Sym'}
 
   zmk_keycode_map:
 
@@ -117,3 +119,9 @@ parse_config:
     TILDE2: '~'
     UNDER: _
     UNDERSCORE: _
+    SZ: 'ß'
+    DEG: '°'
+    ACUTE: '´'
+    AE: 'ä'
+    OE: 'ö'
+    UE: 'ü'
