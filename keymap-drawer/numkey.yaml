@@ -82,8 +82,8 @@ layers:
   - Z
   - F
   - {t: '?', h: '!'}
-  - '&copy_cut'
-  - paste
+  - ''
+  - ''
   - ''
   - ⌦
   - {t: Shift, h: Shift}
@@ -188,15 +188,21 @@ layers:
 combos:
 - p: [26, 25]
   k: cut
-  l: [default_layer, cmos_layer]
+  l: [default_layer, cmos_layer, navnum_layer]
 - p: [27, 26]
   k: copy
-  l: [default_layer, cmos_layer]
+  l: [default_layer, cmos_layer, navnum_layer]
 - p: [28, 27]
   k: paste
-  l: [default_layer, cmos_layer]
+  l: [default_layer, cmos_layer, navnum_layer]
 - p: [29, 28]
   k: clipboard
+  l: [default_layer, cmos_layer]
+- p: [7, 8]
+  k: '&winctrlleft'
+  l: [default_layer, cmos_layer]
+- p: [8, 9]
+  k: '&winctrlright'
   l: [default_layer, cmos_layer]
 - p: [3, 2]
   k: Zone right
