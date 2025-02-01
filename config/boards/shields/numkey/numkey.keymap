@@ -152,8 +152,8 @@ ZMK_COMBO(combo_cut,         &kp LC(DE_X),  LB3 LB4, DEF CMOS NAVNUM)  // Ctrl +
 ZMK_COMBO(combo_copy,         &kp LC(DE_C),  LB2 LB3, DEF CMOS NAVNUM)  // Ctrl + C, active on all layers
 ZMK_COMBO(combo_paste,        &kp LC(DE_V),  LB1 LB2, DEF CMOS NAVNUM)  // Ctrl + V, active on all layers
 ZMK_COMBO(combo_winpaste,     &winpaste,  LB0 LB1, DEF CMOS)  // Win + V, active on all layers
-ZMK_COMBO(combo_priosplit,  &winctrlleft,  RT1 RT2, DEF CMOS)  // Win + CTRL + ALT + 1
-ZMK_COMBO(combo_sharesplit, &winctrlright, RT2 RT3, DEF CMOS)  // Win + CTRL + ALT + 2
+ZMK_COMBO(combo_priosplit,  &priosplit,  RT1 RT2, DEF CMOS)  // Win + CTRL + ALT + 1
+ZMK_COMBO(combo_sharesplit, &sharesplit, RT2 RT3, DEF CMOS)  // Win + CTRL + ALT + 2
 //ZMK_COMBO(combo_winctrlleft,  &winctrlleft,  RT1 RT2, DEF SYM NAVNUM CMOS)  // Win + CTRL + Left, active on all layers
 //ZMK_COMBO(combo_winctrlright, &winctrlright, RT2 RT3, DEF SYM NAVNUM CMOS)  // Win + CTRL + Right, active on all layers
 ZMK_COMBO(combo_winright,     &winright,  LT2 LT3, DEF SYM CMOS)  // Win + Right, active on all layers
