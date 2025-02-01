@@ -127,6 +127,14 @@ ZMK_BEHAVIOR(winleft, macro,
 ZMK_BEHAVIOR(winctrlright, macro,
     bindings = <&macro_press &kp LGUI>, <&macro_press &kp LCTRL>, <&macro_tap &kp RIGHT>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>;
 )
+// windows ctrl + alt + 1
+ZMK_BEHAVIOR(priosplit, macro,
+    bindings = <&macro_press &kp LGUI>, <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_tap &kp DE_N1>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>, <&macro_release &kp LALT>;
+)
+// windows ctrl + alt + 2
+ZMK_BEHAVIOR(sharesplit, macro,
+    bindings = <&macro_press &kp LGUI>, <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_tap &kp DE_N2>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>, <&macro_release &kp LALT>;
+)
 // windows + ctrl
 ZMK_BEHAVIOR(winctrlleft, macro,
     bindings = <&macro_press &kp LGUI>,<&macro_press &kp LCTRL>, <&macro_tap &kp LEFT>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>;
@@ -140,10 +148,12 @@ ZMK_BEHAVIOR(winpaste, macro,
 //#undef COMBO_TERM
 //#define COMBO_TERM 75  // timeout of 75ms (default is 30ms if omitted)
 
-ZMK_COMBO(combo_cut,         &kp LC(DE_X),  LB3 LB4, DEF CMOS)  // Ctrl + X, active on all layers
-ZMK_COMBO(combo_copy,         &kp LC(DE_C),  LB2 LB3, DEF CMOS)  // Ctrl + C, active on all layers
-ZMK_COMBO(combo_paste,        &kp LC(DE_V),  LB1 LB2, DEF CMOS)  // Ctrl + V, active on all layers
+ZMK_COMBO(combo_cut,         &kp LC(DE_X),  LB3 LB4, DEF CMOS NAVNUM)  // Ctrl + X, active on all layers
+ZMK_COMBO(combo_copy,         &kp LC(DE_C),  LB2 LB3, DEF CMOS NAVNUM)  // Ctrl + C, active on all layers
+ZMK_COMBO(combo_paste,        &kp LC(DE_V),  LB1 LB2, DEF CMOS NAVNUM)  // Ctrl + V, active on all layers
 ZMK_COMBO(combo_winpaste,     &winpaste,  LB0 LB1, DEF CMOS)  // Win + V, active on all layers
+ZMK_COMBO(combo_priosplit,  &winctrlleft,  RT1 RT2, DEF CMOS)  // Win + CTRL + ALT + 1
+ZMK_COMBO(combo_sharesplit, &winctrlright, RT2 RT3, DEF CMOS)  // Win + CTRL + ALT + 2
 //ZMK_COMBO(combo_winctrlleft,  &winctrlleft,  RT1 RT2, DEF SYM NAVNUM CMOS)  // Win + CTRL + Left, active on all layers
 //ZMK_COMBO(combo_winctrlright, &winctrlright, RT2 RT3, DEF SYM NAVNUM CMOS)  // Win + CTRL + Right, active on all layers
 ZMK_COMBO(combo_winright,     &winright,  LT2 LT3, DEF SYM CMOS)  // Win + Right, active on all layers
@@ -174,7 +184,7 @@ ZMK_LAYER(cmos_layer,
      // ├────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────┤
          &kp DE_MINUS     &kp DE_Y         &dot_morph       &kp DE_UE        &comma_morph     &kp DE_OE              &kp DE_G         &kp DE_C         &kp DE_V         &kp DE_Z         &kp DE_F         &qexcl
      // ╰────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────╯
-                                                                                                                                      &copy_cut         &kp LC(DE_V)    xxx
+                                                                                                                                      xxx              xxx              xxx
      //                                                    ╰────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────╯
                                                             &kp DEL          &ht LSHFT LSHFT  &kp RET                &lht NAVNUM SYM  &kp SPACE        &bs_del
      //                                                    ╰────────────────┴────────────────┴────────────────╯     ╰────────────────┴────────────────┴────────────────╯

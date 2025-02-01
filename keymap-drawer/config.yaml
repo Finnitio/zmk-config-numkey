@@ -6,6 +6,8 @@ parse_config:
   raw_binding_map:
     '&winright': 'Zone right'
     '&winleft': 'Zone left'
+    '&combo_priosplit': 'Prio Split'
+    '&combo_sharesplit': 'Share Split'
     '&kp LC(DE_X)': 'cut'
     '&kp LC(DE_C)': 'copy'
     '&kp LC(DE_V)': 'paste'
