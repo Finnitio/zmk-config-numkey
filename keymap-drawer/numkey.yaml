@@ -230,7 +230,7 @@ layers:
   - {t: cmos_layer, h: toggle}
   - ''
 combos:
-- p: [41, 40]
+- p: [39, 40]
   k: ⌦
   l: [default_layer, cmos_layer]
 - p: [26, 25]
