@@ -199,10 +199,10 @@ combos:
   k: clipboard
   l: [default_layer, cmos_layer]
 - p: [7, 8]
-  k: '&priosplit'
+  k: Prio Split
   l: [default_layer, cmos_layer]
 - p: [8, 9]
-  k: '&sharesplit'
+  k: Share Split
   l: [default_layer, cmos_layer]
 - p: [3, 2]
   k: Zone right
