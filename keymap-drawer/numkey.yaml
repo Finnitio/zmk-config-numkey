@@ -243,7 +243,7 @@ combos:
   k: paste
   l: [default_layer, cmos_layer, navnum_layer]
 - p: [29, 28]
-  k: clipboard
+  k: clip board
   l: [default_layer, cmos_layer]
 - p: [7, 8]
   k: Prio Split
