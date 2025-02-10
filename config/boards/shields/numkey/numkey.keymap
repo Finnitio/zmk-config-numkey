@@ -103,7 +103,7 @@ ZMK_BEHAVIOR(lht, hold_tap,
 //ZMK_BEHAVIOR(bs_del, mod_morph,
 //    bindings = <&kp BSPC>, <&kp DEL>;
 //    mods = <(MOD_LSFT|MOD_RSFT)>;
-//)
+///)
 
 // tap: comma | shift + tap: semicolon
 SIMPLE_MORPH(comma_morph, SFT, &kp DE_COMMA, &kp DE_SEMI)
