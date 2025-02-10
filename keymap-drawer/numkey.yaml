@@ -39,12 +39,12 @@ layers:
   - '&copy_cut'
   - paste
   - ''
-  - ⌦
+  - ⌫
   - {t: Shift, h: Shift}
   - ⏎
-  - {t: Sym, h: Nav Num}
+  - {t: sym_layer, h: sym_layer}
   - ␣
-  - {t: ⌫, s: ⌦}
+  - {t: navnum_layer, h: navnum_layer}
   cmos_layer:
   - Esc
   - J
@@ -85,14 +85,58 @@ layers:
   - '&copy_cut'
   - paste
   - ''
-  - ⌦
+  - ⌫
   - {t: Shift, h: Shift}
   - ⏎
-  - {t: Sym, h: Nav Num}
+  - {t: sym_layer, h: sym_layer}
   - ␣
-  - {t: ⌫, s: ⌦}
-  sym_layer: ['', ^, '%', EURO, '&', °, '|', \, '[', ']', ´, '`', '', '@', ß, $, '*', '%', '~', /, (, ), '''', '"', '', '', '', <, '>', '#', '', '', '{', '}', '',
-    '', '', '', '', '', '', '', '', '', '']
+  - {t: navnum_layer, h: navnum_layer}
+  sym_layer:
+  - ''
+  - ^
+  - '%'
+  - EURO
+  - '&'
+  - °
+  - '|'
+  - \
+  - '['
+  - ']'
+  - ´
+  - '`'
+  - ''
+  - '@'
+  - ß
+  - $
+  - '*'
+  - '%'
+  - '~'
+  - /
+  - (
+  - )
+  - ''''
+  - '"'
+  - ''
+  - ''
+  - ''
+  - <
+  - '>'
+  - '#'
+  - ''
+  - ''
+  - '{'
+  - '}'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
   navnum_layer:
   - Esc
   - ''
@@ -138,7 +182,7 @@ layers:
   - ⏎
   - ''
   - ''
-  - ''
+  - {type: held}
   fkeysbt_layer:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -186,6 +230,9 @@ layers:
   - {t: cmos_layer, h: toggle}
   - ''
 combos:
+- p: [41, 40]
+  k: ⌦
+  l: [default_layer, cmos_layer]
 - p: [26, 25]
   k: cut
   l: [default_layer, cmos_layer, navnum_layer]
