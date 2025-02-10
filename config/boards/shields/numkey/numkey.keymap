@@ -100,10 +100,10 @@ ZMK_BEHAVIOR(lht, hold_tap,
     )
 
 // tap: backspace | shift + tap: delete
-ZMK_BEHAVIOR(bs_del, mod_morph,
-    bindings = <&kp BSPC>, <&kp DEL>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
+//ZMK_BEHAVIOR(bs_del, mod_morph,
+//    bindings = <&kp BSPC>, <&kp DEL>;
+//    mods = <(MOD_LSFT|MOD_RSFT)>;
+//)
 
 // tap: comma | shift + tap: semicolon
 SIMPLE_MORPH(comma_morph, SFT, &kp DE_COMMA, &kp DE_SEMI)
@@ -148,17 +148,18 @@ ZMK_BEHAVIOR(winpaste, macro,
 //#undef COMBO_TERM
 //#define COMBO_TERM 75  // timeout of 75ms (default is 30ms if omitted)
 
-ZMK_COMBO(combo_cut,         &kp LC(DE_X),  LB3 LB4, DEF CMOS NAVNUM)  // Ctrl + X, active on all layers
-ZMK_COMBO(combo_copy,         &kp LC(DE_C),  LB2 LB3, DEF CMOS NAVNUM)  // Ctrl + C, active on all layers
-ZMK_COMBO(combo_paste,        &kp LC(DE_V),  LB1 LB2, DEF CMOS NAVNUM)  // Ctrl + V, active on all layers
-ZMK_COMBO(combo_winpaste,     &winpaste,  LB0 LB1, DEF CMOS)  // Win + V, active on all layers
-ZMK_COMBO(combo_priosplit,  &priosplit,  RT1 RT2, DEF CMOS)  // Win + CTRL + ALT + 1
+ZMK_COMBO(combo_del, &kp DEL, LH2 LH1, DEF CMOS)  // Del, active on all layers
+ZMK_COMBO(combo_cut, &kp LC(DE_X), LB3 LB4, DEF CMOS NAVNUM)  // Ctrl + X, active on all layers
+ZMK_COMBO(combo_copy, &kp LC(DE_C), LB2 LB3, DEF CMOS NAVNUM)  // Ctrl + C, active on all layers
+ZMK_COMBO(combo_paste, &kp LC(DE_V), LB1 LB2, DEF CMOS NAVNUM)  // Ctrl + V, active on all layers
+ZMK_COMBO(combo_winpaste, &winpaste, LB0 LB1, DEF CMOS)  // Win + V, active on all layers
+ZMK_COMBO(combo_priosplit, &priosplit, RT1 RT2, DEF CMOS)  // Win + CTRL + ALT + 1
 ZMK_COMBO(combo_sharesplit, &sharesplit, RT2 RT3, DEF CMOS)  // Win + CTRL + ALT + 2
 //ZMK_COMBO(combo_winctrlleft,  &winctrlleft,  RT1 RT2, DEF SYM NAVNUM CMOS)  // Win + CTRL + Left, active on all layers
 //ZMK_COMBO(combo_winctrlright, &winctrlright, RT2 RT3, DEF SYM NAVNUM CMOS)  // Win + CTRL + Right, active on all layers
-ZMK_COMBO(combo_winright,     &winright,  LT2 LT3, DEF SYM CMOS)  // Win + Right, active on all layers
-ZMK_COMBO(combo_winleft,      &winleft,  LT1 LT2, DEF SYM CMOS)  // Win + Left, active on all layers
-ZMK_COMBO(combo_LT3,          &to FKEYBT,    RT4 RT5, DEF CMOS)  //Always go to Layer FKEYS&BT
+ZMK_COMBO(combo_winright, &winright, LT2 LT3, DEF SYM CMOS)  // Win + Right, active on all layers
+ZMK_COMBO(combo_winleft, &winleft, LT1 LT2, DEF SYM CMOS)  // Win + Left, active on all layers
+ZMK_COMBO(combo_LT3, &to FKEYBT, RT4 RT5, DEF CMOS)  //Always go to Layer FKEYS&BT
 
 /* keymap */
 
@@ -172,7 +173,7 @@ ZMK_LAYER(default_layer,
      // ╰────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────╯
                                                                                                                                       &copy_cut        &kp LC(DE_V)     xxx
      //                                                    ╰────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────╯
-                                                            &kp DEL          &ht LSHFT LSHFT  &kp RET                &lht NAVNUM SYM  &kp SPACE        &bs_del          
+                                                            &kp BSPC         &ht LSHFT LSHFT  &kp RET                &lht SYM SYM     &kp SPACE        &lht NAVNUM NAVNUM
      //                                                    ╰────────────────┴────────────────┴────────────────╯     ╰────────────────┴────────────────┴────────────────╯
 )
 
@@ -186,7 +187,7 @@ ZMK_LAYER(cmos_layer,
      // ╰────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────╯
                                                                                                                                       &copy_cut        &kp LC(DE_V)     xxx
      //                                                    ╰────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────╯
-                                                            &kp DEL          &ht LSHFT LSHFT  &kp RET                &lht NAVNUM SYM  &kp SPACE        &bs_del          
+                                                            &kp BSPC         &ht LSHFT LSHFT  &kp RET                &lht SYM SYM     &kp SPACE        &lht NAVNUM NAVNUM      
      //                                                    ╰────────────────┴────────────────┴────────────────╯     ╰────────────────┴────────────────┴────────────────╯
 )
 
