@@ -11,7 +11,7 @@ parse_config:
     '&kp LC(DE_X)': 'cut'
     '&kp LC(DE_C)': 'copy'
     '&kp LC(DE_V)': 'paste'
-    '&winpaste': 'clipboard'
+    '&winpaste': 'clip board'
     '&to FKEYBT': 'F-Keys BT'
     '&comma_morph': {h: ';', t: ','}
     '&dot_morph': {h: ':', t: '.'}
