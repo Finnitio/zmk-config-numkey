@@ -148,7 +148,7 @@ ZMK_BEHAVIOR(winpaste, macro,
 //#undef COMBO_TERM
 //#define COMBO_TERM 75  // timeout of 75ms (default is 30ms if omitted)
 
-ZMK_COMBO(combo_del, &kp DEL, LH2 LH1, DEF CMOS)  // Del, active on all layers
+//ZMK_COMBO(combo_del, &kp DEL, LH2 LH1, DEF CMOS)  // Del, active on all layers
 ZMK_COMBO(combo_cut, &kp LC(DE_X), LB3 LB4, DEF CMOS NAVNUM)  // Ctrl + X, active on all layers
 ZMK_COMBO(combo_copy, &kp LC(DE_C), LB2 LB3, DEF CMOS NAVNUM)  // Ctrl + C, active on all layers
 ZMK_COMBO(combo_paste, &kp LC(DE_V), LB1 LB2, DEF CMOS NAVNUM)  // Ctrl + V, active on all layers
@@ -171,7 +171,7 @@ ZMK_LAYER(default_layer,
      // ├────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────┤
          xxx              &kp DE_Y         &kp DE_X         &kp DE_C         &kp DE_V         &kp DE_B               &kp DE_N         &kp DE_M         &comma_morph     &dot_morph       &qexcl           &kp DE_MINUS
      // ╰────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────╯
-                                                                                                                                      &copy_cut        &kp LC(DE_V)     xxx
+                                                                                                                                      &kp DEL          &copy_cut        &kp LC(DE_V)
      //                                                    ╰────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────╯
                                                             &kp BSPC         &ht LSHFT LSHFT  &kp RET                &lht SYM SYM     &kp SPACE        &lht NAVNUM NAVNUM
      //                                                    ╰────────────────┴────────────────┴────────────────╯     ╰────────────────┴────────────────┴────────────────╯
@@ -185,10 +185,10 @@ ZMK_LAYER(cmos_layer,
      // ├────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────┤
          &kp DE_MINUS     &kp DE_Y         &dot_morph       &kp DE_UE        &comma_morph     &kp DE_OE              &kp DE_G         &kp DE_C         &kp DE_V         &kp DE_Z         &kp DE_F         &qexcl
      // ╰────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────╯
-                                                                                                                                      &copy_cut        &kp LC(DE_V)     xxx
+                                                                                                                                      &kp DEL          &copy_cut        &kp LC(DE_V)
      //                                                    ╰────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────╯
                                                             &kp BSPC         &ht LSHFT LSHFT  &kp RET                &lht SYM SYM     &kp SPACE        &lht NAVNUM NAVNUM      
-     //                                                    ╰────────────────┴────────────────┴────────────────╯     ╰────────────────┴────────────────┴────────────────╯
+     //                                                    ╰────────────────┴────────────────┴────────────────╯     ╰────────────────┴────────────────┴────────────────╯    
 )
 
 
