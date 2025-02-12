@@ -97,7 +97,7 @@ ZMK_BEHAVIOR(lhkt, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <200>;
     quick-tap-ms = <QUICK_TAP_MS>;
-    bindings = <&mo>, <&kp;
+    bindings = <&mo>, <&kp>;
 )
 
 #define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) \
