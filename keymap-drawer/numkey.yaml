@@ -36,9 +36,9 @@ layers:
   - {t: ., h: ':'}
   - {t: '?', h: '!'}
   - '-'
+  - ⌦
   - '&copy_cut'
   - paste
-  - ''
   - ⌫
   - {t: Shift, h: Shift}
   - ⏎
@@ -82,9 +82,9 @@ layers:
   - Z
   - F
   - {t: '?', h: '!'}
+  - ⌦
   - '&copy_cut'
   - paste
-  - ''
   - ⌫
   - {t: Shift, h: Shift}
   - ⏎
@@ -230,9 +230,6 @@ layers:
   - {t: cmos_layer, h: toggle}
   - ''
 combos:
-- p: [39, 40]
-  k: ⌦
-  l: [default_layer, cmos_layer]
 - p: [26, 25]
   k: cut
   l: [default_layer, cmos_layer, navnum_layer]
