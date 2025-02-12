@@ -36,15 +36,15 @@ layers:
   - {t: ., h: ':'}
   - {t: '?', h: '!'}
   - '-'
-  - ⌦
   - '&copy_cut'
   - paste
-  - ⌫
+  - ''
+  - ⌦
   - {t: Shift, h: Shift}
   - ⏎
   - {t: sym_layer, h: sym_layer}
   - ␣
-  - {t: navnum_layer, h: navnum_layer}
+  - {t: ⌫, h: navnum_layer}
   cmos_layer:
   - Esc
   - J
@@ -82,15 +82,15 @@ layers:
   - Z
   - F
   - {t: '?', h: '!'}
-  - ⌦
   - '&copy_cut'
   - paste
-  - ⌫
+  - ''
+  - ⌦
   - {t: Shift, h: Shift}
   - ⏎
   - {t: sym_layer, h: sym_layer}
   - ␣
-  - {t: navnum_layer, h: navnum_layer}
+  - {t: ⌫, h: navnum_layer}
   sym_layer:
   - ''
   - ^
