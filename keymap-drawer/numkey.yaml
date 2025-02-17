@@ -43,8 +43,8 @@ layers:
   - {t: Shift, h: Shift}
   - ⏎
   - {t: sym_layer, h: sym_layer}
-  - ␣
-  - {t: ⌫, h: navnum_layer}
+  - {t: ␣, h: navnum_layer}
+  - ⌫
   cmos_layer:
   - Esc
   - J
@@ -89,8 +89,8 @@ layers:
   - {t: Shift, h: Shift}
   - ⏎
   - {t: sym_layer, h: sym_layer}
-  - ␣
-  - {t: ⌫, h: navnum_layer}
+  - {t: ␣, h: navnum_layer}
+  - ⌫
   sym_layer:
   - ''
   - ^
@@ -181,8 +181,8 @@ layers:
   - ''
   - ⏎
   - ''
-  - ''
   - {type: held}
+  - ''
   fkeysbt_layer:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
