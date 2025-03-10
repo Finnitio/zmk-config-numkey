@@ -1,52 +1,6 @@
 layers:
   default_layer:
   - Esc
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Z
-  - U
-  - I
-  - O
-  - P
-  - Ü
-  - ↹
-  - {t: A, h: Win}
-  - {t: S, h: Ctrl}
-  - {t: D, h: Shift}
-  - {t: F, h: Alt}
-  - G
-  - H
-  - {t: J, h: Alt}
-  - {t: K, h: Shift}
-  - {t: L, h: Ctrl}
-  - {t: Ö, h: Win}
-  - Ä
-  - ''
-  - Y
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - {t: ',', h: ;}
-  - {t: ., h: ':'}
-  - {t: '?', h: '!'}
-  - '-'
-  - '&copy_cut'
-  - paste
-  - ''
-  - ⌦
-  - {t: Shift, h: Shift}
-  - ⏎
-  - {t: sym_layer, h: sym_layer}
-  - {t: ␣, h: navnum_layer}
-  - ⌫
-  cmos_layer:
-  - Esc
   - J
   - K
   - U
@@ -82,6 +36,52 @@ layers:
   - Z
   - F
   - {t: '?', h: '!'}
+  - '&copy_cut'
+  - paste
+  - ''
+  - ⌦
+  - {t: Shift, h: Shift}
+  - ⏎
+  - {t: sym_layer, h: sym_layer}
+  - {t: ␣, h: navnum_layer}
+  - ⌫
+  qwertz_layer:
+  - Esc
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Z
+  - U
+  - I
+  - O
+  - P
+  - Ü
+  - ↹
+  - {t: A, h: Win}
+  - {t: S, h: Ctrl}
+  - {t: D, h: Shift}
+  - {t: F, h: Alt}
+  - G
+  - H
+  - {t: J, h: Alt}
+  - {t: K, h: Shift}
+  - {t: L, h: Ctrl}
+  - {t: Ö, h: Win}
+  - Ä
+  - ''
+  - Y
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', h: ;}
+  - {t: ., h: ':'}
+  - {t: '?', h: '!'}
+  - '-'
   - '&copy_cut'
   - paste
   - ''
@@ -227,33 +227,33 @@ layers:
   - ''
   - ''
   - {t: default_layer, h: toggle}
-  - {t: cmos_layer, h: toggle}
+  - {t: qwertz_layer, h: toggle}
   - ''
 combos:
 - p: [26, 25]
   k: cut
-  l: [default_layer, cmos_layer, navnum_layer]
+  l: [qwertz_layer, default_layer, navnum_layer]
 - p: [27, 26]
   k: copy
-  l: [default_layer, cmos_layer, navnum_layer]
+  l: [qwertz_layer, default_layer, navnum_layer]
 - p: [28, 27]
   k: paste
-  l: [default_layer, cmos_layer, navnum_layer]
+  l: [qwertz_layer, default_layer, navnum_layer]
 - p: [29, 28]
   k: clip board
-  l: [default_layer, cmos_layer]
+  l: [qwertz_layer, default_layer]
 - p: [7, 8]
   k: Prio Split
-  l: [default_layer, cmos_layer]
+  l: [qwertz_layer, default_layer]
 - p: [8, 9]
   k: Share Split
-  l: [default_layer, cmos_layer]
+  l: [qwertz_layer, default_layer]
 - p: [3, 2]
   k: Zone right
-  l: [default_layer, sym_layer, cmos_layer]
+  l: [qwertz_layer, sym_layer, default_layer]
 - p: [4, 3]
   k: Zone left
-  l: [default_layer, sym_layer, cmos_layer]
+  l: [qwertz_layer, sym_layer, default_layer]
 - p: [10, 11]
   k: F-Keys BT
-  l: [default_layer, cmos_layer]
+  l: [qwertz_layer, default_layer]
