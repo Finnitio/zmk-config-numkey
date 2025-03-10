@@ -16,8 +16,8 @@
 #define ___ &trans
 #define xxx &none
 
-#define DEF 0// layer shortcuts, must match order in which they are defined below
-#define CMOS 1
+#define CMOS 0// layer shortcuts, must match order in which they are defined below
+#define QWERTZ 1
 #define SYM 2
 #define NAVNUM 3
 #define FKEYBT 4
@@ -155,22 +155,36 @@ ZMK_BEHAVIOR(winpaste, macro,
 //#undef COMBO_TERM
 //#define COMBO_TERM 75  // timeout of 75ms (default is 30ms if omitted)
 
-//ZMK_COMBO(combo_del, &kp DEL, LH2 LH1, DEF CMOS)  // Del, active on all layers
-ZMK_COMBO(combo_cut, &kp LC(DE_X), LB3 LB4, DEF CMOS NAVNUM)  // Ctrl + X, active on all layers
-ZMK_COMBO(combo_copy, &kp LC(DE_C), LB2 LB3, DEF CMOS NAVNUM)  // Ctrl + C, active on all layers
-ZMK_COMBO(combo_paste, &kp LC(DE_V), LB1 LB2, DEF CMOS NAVNUM)  // Ctrl + V, active on all layers
-ZMK_COMBO(combo_winpaste, &winpaste, LB0 LB1, DEF CMOS)  // Win + V, active on all layers
-ZMK_COMBO(combo_priosplit, &priosplit, RT1 RT2, DEF CMOS)  // Win + CTRL + ALT + 1
-ZMK_COMBO(combo_sharesplit, &sharesplit, RT2 RT3, DEF CMOS)  // Win + CTRL + ALT + 2
-//ZMK_COMBO(combo_winctrlleft,  &winctrlleft,  RT1 RT2, DEF SYM NAVNUM CMOS)  // Win + CTRL + Left, active on all layers
-//ZMK_COMBO(combo_winctrlright, &winctrlright, RT2 RT3, DEF SYM NAVNUM CMOS)  // Win + CTRL + Right, active on all layers
-ZMK_COMBO(combo_winright, &winright, LT2 LT3, DEF SYM CMOS)  // Win + Right, active on all layers
-ZMK_COMBO(combo_winleft, &winleft, LT1 LT2, DEF SYM CMOS)  // Win + Left, active on all layers
-ZMK_COMBO(combo_LT3, &to FKEYBT, RT4 RT5, DEF CMOS)  //Always go to Layer FKEYS&BT
+//ZMK_COMBO(combo_del, &kp DEL, LH2 LH1, QWERTZ CMOS)  // Del, active on all layers
+ZMK_COMBO(combo_cut, &kp LC(DE_X), LB3 LB4, QWERTZ CMOS NAVNUM)  // Ctrl + X, active on all layers
+ZMK_COMBO(combo_copy, &kp LC(DE_C), LB2 LB3, QWERTZ CMOS NAVNUM)  // Ctrl + C, active on all layers
+ZMK_COMBO(combo_paste, &kp LC(DE_V), LB1 LB2, QWERTZ CMOS NAVNUM)  // Ctrl + V, active on all layers
+ZMK_COMBO(combo_winpaste, &winpaste, LB0 LB1, QWERTZ CMOS)  // Win + V, active on all layers
+ZMK_COMBO(combo_priosplit, &priosplit, RT1 RT2, QWERTZ CMOS)  // Win + CTRL + ALT + 1
+ZMK_COMBO(combo_sharesplit, &sharesplit, RT2 RT3, QWERTZ CMOS)  // Win + CTRL + ALT + 2
+//ZMK_COMBO(combo_winctrlleft,  &winctrlleft,  RT1 RT2, QWERTZ SYM NAVNUM CMOS)  // Win + CTRL + Left, active on all layers
+//ZMK_COMBO(combo_winctrlright, &winctrlright, RT2 RT3, QWERTZ SYM NAVNUM CMOS)  // Win + CTRL + Right, active on all layers
+ZMK_COMBO(combo_winright, &winright, LT2 LT3, QWERTZ SYM CMOS)  // Win + Right, active on all layers
+ZMK_COMBO(combo_winleft, &winleft, LT1 LT2, QWERTZ SYM CMOS)  // Win + Left, active on all layers
+ZMK_COMBO(combo_LT3, &to FKEYBT, RT4 RT5, QWERTZ CMOS)  //Always go to Layer FKEYS&BT
 
 /* keymap */
 
 ZMK_LAYER(default_layer,
+    // ╭────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────╮     ╭────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────╮
+        &kp ESC          &kp DE_J         &kp DE_K         &kp DE_U         &kp DE_O         &kp DE_AE              &kp DE_P         &kp DE_B         &kp DE_L         &kp DE_M         &kp DE_SZ        &kp DE_X
+    // ├────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────┤
+        &kp TAB          &hml LGUI DE_W   &hml LCTRL DE_H  &hml LSHFT DE_I  &hml LALT DE_E   &kp DE_A               &kp DE_D         &hmr LALT DE_T   &hmr LSHFT DE_N  &hmr LCTRL DE_R  &hmr LGUI DE_S   &kp DE_Q
+    // ├────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────┤
+        &kp DE_MINUS     &kp DE_Y         &dot_morph       &kp DE_UE        &comma_morph     &kp DE_OE              &kp DE_G         &kp DE_C         &kp DE_V         &kp DE_Z         &kp DE_F         &qexcl
+    // ╰────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────╯
+                                                                                                                                     &copy_cut        &kp LC(DE_V)     xxx
+    //                                                    ╰────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────╯
+                                                           &kp DEL         &ht LSHFT LSHFT  &kp RET                &lht SYM SYM      &lhkt NAVNUM SPACE &kp BSPC
+    //                                                    ╰────────────────┴────────────────┴────────────────╯     ╰────────────────┴────────────────┴────────────────╯    
+)
+
+ZMK_LAYER(qwertz_layer,
      // ╭────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────╮     ╭────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────╮
          &kp ESC          &kp DE_Q         &kp DE_W         &kp DE_E         &kp DE_R         &kp DE_T               &kp DE_Z         &kp DE_U         &kp DE_I         &kp DE_O         &kp DE_P         &kp DE_UE
      // ├────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────┤
@@ -182,20 +196,6 @@ ZMK_LAYER(default_layer,
      //                                                    ╰────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────╯
                                                             &kp DEL         &ht LSHFT LSHFT  &kp RET                &lht SYM SYM      &lhkt NAVNUM SPACE &kp BSPC
      //                                                    ╰────────────────┴────────────────┴────────────────╯     ╰────────────────┴────────────────┴────────────────╯
-)
-
-ZMK_LAYER(cmos_layer,
-     // ╭────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────╮     ╭────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────╮
-         &kp ESC          &kp DE_J         &kp DE_K         &kp DE_U         &kp DE_O         &kp DE_AE              &kp DE_P         &kp DE_B         &kp DE_L         &kp DE_M         &kp DE_SZ        &kp DE_X
-     // ├────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────┤
-         &kp TAB          &hml LGUI DE_W   &hml LCTRL DE_H  &hml LSHFT DE_I  &hml LALT DE_E   &kp DE_A               &kp DE_D         &hmr LALT DE_T   &hmr LSHFT DE_N  &hmr LCTRL DE_R  &hmr LGUI DE_S   &kp DE_Q
-     // ├────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────┤
-         &kp DE_MINUS     &kp DE_Y         &dot_morph       &kp DE_UE        &comma_morph     &kp DE_OE              &kp DE_G         &kp DE_C         &kp DE_V         &kp DE_Z         &kp DE_F         &qexcl
-     // ╰────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────╯
-                                                                                                                                      &copy_cut        &kp LC(DE_V)     xxx
-     //                                                    ╰────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────╯
-                                                            &kp DEL         &ht LSHFT LSHFT  &kp RET                &lht SYM SYM      &lhkt NAVNUM SPACE &kp BSPC
-     //                                                    ╰────────────────┴────────────────┴────────────────╯     ╰────────────────┴────────────────┴────────────────╯    
 )
 
 
@@ -237,7 +237,7 @@ ZMK_LAYER(fkeysbt_layer,
      // ╰─────────────┬─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤     ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┬─────────────╯
                                                                                                                  xxx           xxx           xxx
      //                                           ╰─────────────┼─────────────┼─────────────┤     ├─────────────┼─────────────┼─────────────┼─────────────╯
-                                                   xxx           xxx           xxx                 &to DEF       &to CMOS      xxx
+                                                   xxx           xxx           xxx                 &to CMOS      &to QWERTZ    xxx
      //                                           ╰─────────────┴─────────────┴─────────────╯     ╰─────────────┴─────────────┴─────────────╯
 )
 
