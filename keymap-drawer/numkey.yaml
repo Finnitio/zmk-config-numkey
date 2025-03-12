@@ -10,7 +10,7 @@ layers:
   - B
   - L
   - M
-  - ß
+  - F
   - X
   - ↹
   - {t: W, h: Win}
@@ -24,7 +24,7 @@ layers:
   - {t: R, h: Ctrl}
   - {t: S, h: Win}
   - Q
-  - '-'
+  - {t: '?', h: '!'}
   - Y
   - {t: ., h: ':'}
   - Ü
@@ -34,8 +34,8 @@ layers:
   - C
   - V
   - Z
-  - F
-  - {t: '?', h: '!'}
+  - ß
+  - '-'
   - '&copy_cut'
   - paste
   - ''
