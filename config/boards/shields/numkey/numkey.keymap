@@ -36,6 +36,7 @@
 };
 
 &sl {  // sticky-layer config
+    release-after-ms = <3000>;
     ignore-modifiers;          // allow chording sticky mods & layers
 };
 
