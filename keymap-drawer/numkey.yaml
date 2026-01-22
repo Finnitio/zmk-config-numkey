@@ -40,10 +40,10 @@ layers:
   - ''
   - ''
   - ''
-  - ⌦
+  - {t: sym_layer, h: sym_layer}
   - {t: Shift, h: Shift}
   - ⏎
-  - {t: sym_layer, h: sym_layer}
+  - ⌦
   - {t: ␣, h: navnum_layer}
   - ⌫
   qwertz_layer:
@@ -132,10 +132,10 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   navnum_layer:
@@ -257,4 +257,7 @@ combos:
   l: [qwertz_layer, sym_layer, default_layer]
 - p: [10, 11]
   k: F-Keys BT
+  l: [qwertz_layer, default_layer]
+- p: [40, 41]
+  k: ⌦
   l: [qwertz_layer, default_layer]
