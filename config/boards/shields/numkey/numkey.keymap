@@ -70,6 +70,12 @@ ZMK_HOLD_TAP(hmr,
     bindings = <&kp>, <&kp>;
 )
 
+// tap: lht SYM SYM | double-tap: delete
+ZMK_TAP_DANCE(sym_del,
+    tapping-term-ms = <200>;
+    bindings = <&lht SYM SYM>, <&kp DEL>;
+)
+
 /* Key Mods */
 
 // tap: copy | double-tap: cut
@@ -181,7 +187,7 @@ ZMK_LAYER(default_layer,
     // ╰────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────╯
                                                                                                                                      xxx              xxx              xxx
     //                                                    ╰────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────╯
-                                                            &lht SYM SYM    &ht LSHFT LSHFT  &kp RET                &kp DEL          &lhkt NAVNUM SPACE &kp BSPC
+                                                            &sym_del        &ht LSHFT LSHFT  &kp RET                &kp DEL          &lhkt NAVNUM SPACE &kp BSPC
     //                                                    ╰────────────────┴────────────────┴────────────────╯     ╰────────────────┴────────────────┴────────────────╯    
 )
 
