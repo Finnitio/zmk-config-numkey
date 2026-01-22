@@ -168,7 +168,7 @@ ZMK_COMBO(combo_sharesplit, &sharesplit, RT2 RT3, QWERTZ CMOS)  // Win + CTRL + 
 ZMK_COMBO(combo_winright, &winright, LT2 LT3, QWERTZ SYM CMOS)  // Win + Right, active on all layers
 ZMK_COMBO(combo_winleft, &winleft, LT1 LT2, QWERTZ SYM CMOS)  // Win + Left, active on all layers
 ZMK_COMBO(combo_LT3, &to FKEYBT, RT4 RT5, QWERTZ CMOS)  //Always go to Layer FKEYS&BT
-
+ZMK_COMBO(combo_del, &kp DEL, LH1 LH0, QWERTZ CMOS)
 /* keymap */
 
 ZMK_LAYER(default_layer,
@@ -181,7 +181,7 @@ ZMK_LAYER(default_layer,
     // ╰────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────╯
                                                                                                                                      xxx              xxx              xxx
     //                                                    ╰────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────╯
-                                                           &kp DEL         &ht LSHFT LSHFT  &kp RET                &lht SYM SYM      &lhkt NAVNUM SPACE &kp BSPC
+                                                            &lht SYM SYM    &ht LSHFT LSHFT  &kp RET                &kp DEL          &lhkt NAVNUM SPACE &kp BSPC
     //                                                    ╰────────────────┴────────────────┴────────────────╯     ╰────────────────┴────────────────┴────────────────╯    
 )
 
