@@ -40,7 +40,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: sym_layer, h: sym_layer}
+  - '&sym_del'
   - {t: Shift, h: Shift}
   - ⏎
   - ⌦
@@ -132,10 +132,10 @@ layers:
   - ''
   - ''
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   navnum_layer:
