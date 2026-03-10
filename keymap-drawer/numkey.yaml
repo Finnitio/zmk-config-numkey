@@ -40,10 +40,10 @@ layers:
   - ''
   - ''
   - ''
-  - '&sym_del'
+  - ⌦
   - {t: Shift, h: Shift}
   - ⏎
-  - ⌦
+  - {t: sym_layer, h: sym_layer}
   - {t: ␣, h: navnum_layer}
   - ⌫
   qwertz_layer:

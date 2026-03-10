@@ -293,7 +293,7 @@ path.combo {
 </g>
 <g transform="translate(308, 210)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">&amp;sym_del</tspan></text>
+<text x="0" y="0" class="key tap">⌦</text>
 </g>
 <g transform="translate(370, 226) rotate(26.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -306,8 +306,11 @@ path.combo {
 </g>
 <g transform="translate(589, 265) rotate(-52.0)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⌦</text>
-</g>
+<a href="#sym_layer">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 78%">sym_layer</tspan></text>
+</a><a href="#sym_layer">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 78%">sym_layer</tspan></text>
+</a></g>
 <g transform="translate(638, 226) rotate(-26.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">␣</text>
