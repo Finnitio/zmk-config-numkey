@@ -1,4 +1,4 @@
-#include <behaviors.dtsi>
+o#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -187,7 +187,7 @@ ZMK_LAYER(default_layer,
     // ╰────────────────┬────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┬────────────────╯
                                                                                                                                      xxx              xxx              xxx
     //                                                    ╰────────────────┼────────────────┼────────────────┤     ├────────────────┼────────────────┼────────────────┼────────────────╯
-                                                            &sym_del        &ht LSHFT LSHFT  &kp RET                &kp DEL          &lhkt NAVNUM SPACE &kp BSPC
+                                                            &kp DEL         &ht LSHFT LSHFT  &kp RET                &lht SYM SYM     &lhkt NAVNUM SPACE &kp BSPC
     //                                                    ╰────────────────┴────────────────┴────────────────╯     ╰────────────────┴────────────────┴────────────────╯    
 )
 
